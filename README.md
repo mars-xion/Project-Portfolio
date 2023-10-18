@@ -10,8 +10,6 @@ AL Habsi,Mazoun | 3922308
 ## Footnotes
 Figma sketch: https://www.figma.com/file/L98G03zTIbofzjoYiNxnOD/Untitled?type=whiteboard&t=1A91z80DebdUdW1i-0 <br />
 
-- Trello link: -
-- Brand Guide: -
 
 ##### Prototype
 
