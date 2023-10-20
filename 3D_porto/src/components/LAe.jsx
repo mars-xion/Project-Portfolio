@@ -17,7 +17,8 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { github } from '../assets';
 
 
-const ProjectCard = ({ index, name, description,
+
+const ProjectCard = ({ index, name, position, description,
   tags, image, source_code_link}) => {
    return(
      <motion.div 
@@ -47,6 +48,7 @@ const ProjectCard = ({ index, name, description,
        </div>
        <div className="mt-5">
          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+         <p className="mt-2 text-secondary text-[14px]">{position}</p>
          <p className="mt-2 text-secondary text-[14px]">{description}</p>
        </div>
        <div className="mt-4 flex flex-wrap gap-2">
@@ -67,16 +69,28 @@ const LAe = () => {
     // Set initial selected tab
     const [selectedTab, setSelectedTab] = useState(data[0].expData.position); 
     
-    const handleTabChange = (value) => {
-      setSelectedTab(value);
-    };
+    // const handleTabChange = (value) => {
+    //   setSelectedTab(value);
+    // };
 
     // filter project depininding on the type of the Learning Agreements
     const filteredProjects = LAprojects.filter(
       (LAprojects) => LAprojects.position === selectedTab
     );
     
-    //console.log(filteredProjects.map((LAprojects) => LAprojects.position));
+    // // show the result of the filteredProjects to check that it works
+    // filteredProjects.forEach((LAprojects) => {
+    //   console.log(LAprojects.position);
+    // });
+
+    const handleTabChange = (value) => {
+      console.log("Selected Tab:", value);
+      const filteredProjects = LAprojects.filter((LAprojects) => LAprojects.position === value);
+      console.log("Filtered Projects:", filteredProjects);
+      setSelectedTab(value);
+    };
+
+
 
     return (
       <Tabs value={selectedTab} onChange={handleTabChange} 
@@ -120,16 +134,22 @@ const LAe = () => {
               <br />
               <p>{expData.details.join("\n")}</p>
 
-              {filteredProjects.length > 0 ? (
-                <div className="mt-20 flex flex-wrap gap-7">
-                  {filteredProjects.map((LAprojects, index) => (
-                    <ProjectCard key={`LAprojects-${index}`} index={index} {...LAprojects} />
-
-                  ))}
-                </div>
-              ) : (
-                <p>No projects found for the selected position.</p>
-              )}
+            {filteredProjects.length > 0 ? (
+              <div variant="outlined" className="mt-20 flex flex-wrap gap-7 opacity-100">
+                {filteredProjects.map((LAprojects, index) => (
+                  <>
+                    {/* <ProjectCard key={`LAprojects-${index}`} index={index} {...LAprojects} />
+                    <ProjectCard key={LAprojects.name} {...LAprojects} /> */}
+                    <ProjectCard variant="outlined" key={`project-${index}`}  index={index} {...LAprojects} />
+                    <p>test</p>
+                  </>
+                ))}
+              </div>
+            ) : (
+              <><br/><br/>
+              <p>No projects found for the selected Learning agreement.</p>
+              </>
+            )}
 
             </TabPanel>
           ))}
