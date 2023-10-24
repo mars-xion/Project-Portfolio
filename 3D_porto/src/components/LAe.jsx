@@ -74,7 +74,7 @@ const LAe = () => {
     // };
 
     // filter project depininding on the type of the Learning Agreements
-    const filteredProjects = LAprojects.filter(
+    let  filteredProjects = LAprojects.filter(
       (LAprojects) => LAprojects.position === selectedTab
     );
     
@@ -84,8 +84,8 @@ const LAe = () => {
     // });
 
     const handleTabChange = (value) => {
+      filteredProjects = LAprojects.filter((LAproject) => LAproject.position === value);
       console.log("Selected Tab:", value);
-      const filteredProjects = LAprojects.filter((LAprojects) => LAprojects.position === value);
       console.log("Filtered Projects:", filteredProjects);
       setSelectedTab(value);
     };
@@ -135,15 +135,25 @@ const LAe = () => {
               <p>{expData.details.join("\n")}</p>
 
             {filteredProjects.length > 0 ? (
-              <div variant="outlined" className="mt-20 flex flex-wrap gap-7 opacity-100">
-                {filteredProjects.map((LAprojects, index) => (
+              <div className="mt-20 flex flex-wrap gap-7 opacity-100">
+                {/* {filteredProjects.map((LAprojects, index, position) => (
                   <>
                     {/* <ProjectCard key={`LAprojects-${index}`} index={index} {...LAprojects} />
                     <ProjectCard key={LAprojects.name} {...LAprojects} /> */}
-                    <ProjectCard variant="outlined" key={`project-${index}`}  index={index} {...LAprojects} />
-                    <p>test</p>
+                    {/* <ProjectCard key={`${selectedTab}-${index}`} index={index} {...LAprojects} />                     */}
+                    {/* <p>test</p>
                   </>
-                ))}
+                ))} */} 
+
+                {filteredProjects.map(function(data) {
+                      return (
+                        <div>
+                          Applicant name:  {data.name}
+                        </div>
+                      )
+                })}
+
+
               </div>
             ) : (
               <><br/><br/>
