@@ -135,28 +135,25 @@ const LAe = () => {
               <p>{expData.details.join("\n")}</p>
 
             {filteredProjects.length > 0 ? (
-              <div className="mt-20 flex flex-wrap gap-7 opacity-100">
-                {/* {filteredProjects.map((LAprojects, index, position) => (
-                  <>
-                    {/* <ProjectCard key={`LAprojects-${index}`} index={index} {...LAprojects} />
-                    <ProjectCard key={LAprojects.name} {...LAprojects} /> */}
-                    {/* <ProjectCard key={`${selectedTab}-${index}`} index={index} {...LAprojects} />                     */}
-                    {/* <p>test</p>
-                  </>
-                ))} */} 
+              <div className="mt-20 flex flex-wrap gap-7">
 
-                {filteredProjects.map(function(LAprojects, index) {
+{filteredProjects.map((LAprojects, index, position) => (
+                  <>
+                    {/* <ProjectCard key={`LAprojects-${index}`} index={index} {...LAprojects} /> */}
+                    <p>test</p>
+                  </>
+                  ))}
+                {/* {filteredProjects.map(function(LAprojects, index) {
                       return (
                         <div key={`project-${index}`}>
-                          {/* Applicant name:  {ProjectCard.name} */}
+                          Applicant name:  {ProjectCard.name}
 
                           <ProjectCard index={index} {...LAprojects} />
 
 
                         </div>
                       )
-                })}
-
+                })} */}
 
               </div>
             ) : (
