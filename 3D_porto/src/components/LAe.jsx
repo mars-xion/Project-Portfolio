@@ -137,8 +137,22 @@ const LAe = () => {
             {filteredProjects.length > 0 ? (
               <div className="mt-20 flex flex-wrap gap-7">
 
-{filteredProjects.map((LAprojects, index, position) => (
+                {filteredProjects.map((LAprojects, index) => (
                   <>
+
+                    <div key={`project-${index}`}>
+                        <ProjectCard
+                          index={index}
+                          name={LAprojects.name}
+                          position={LAprojects.position}
+                          description={LAprojects.description}
+                          tags={LAprojects.tags}
+                          image={LAprojects.image}
+                          source_code_link={LAprojects.source_code_link}
+                        />
+                      </div>
+
+
                     {/* <ProjectCard key={`LAprojects-${index}`} index={index} {...LAprojects} /> */}
                     <p>test</p>
                   </>
