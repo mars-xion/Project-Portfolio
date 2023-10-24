@@ -8,7 +8,7 @@ import {
 
 import { LAData, LAprojects } from "../constants";
 import { SectionWrapper } from "../hoc";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
@@ -64,29 +64,26 @@ const ProjectCard = ({ index, name, position, description,
 }
 
 
-const LAe = () => {
+const LAe = (props) => {
     const data = LAData.jobs ;
     // Set initial selected tab
     const [selectedTab, setSelectedTab] = useState(data[0].expData.position); 
-    
-    // const handleTabChange = (value) => {
-    //   setSelectedTab(value);
-    // };
 
     // filter project depininding on the type of the Learning Agreements
     let  filteredProjects = LAprojects.filter(
       (LAprojects) => LAprojects.position === selectedTab
     );
+
+    // Log state changes when the component mounts and whenever selectedTab changes
+    useEffect(() => {
+      console.log("Selected Tab:", selectedTab);
+    }, [selectedTab]); // useEffect will run whenever selectedTab change
     
-    // // show the result of the filteredProjects to check that it works
-    // filteredProjects.forEach((LAprojects) => {
-    //   console.log(LAprojects.position);
-    // });
 
     const handleTabChange = (value) => {
+      console.log("Selected Tab:", value); // Log the selected tab value
       filteredProjects = LAprojects.filter((LAproject) => LAproject.position === value);
-      console.log("Selected Tab:", value);
-      console.log("Filtered Projects:", filteredProjects);
+      console.log("Filtered Projects:", filteredProjects); // Log the filtered projects
       setSelectedTab(value);
     };
 
@@ -138,36 +135,17 @@ const LAe = () => {
               <div className="mt-20 flex flex-wrap gap-7">
 
                 {filteredProjects.map((LAprojects, index) => (
-                  <>
+                 
 
                     <div key={`project-${index}`}>
-                        <ProjectCard
-                          index={index}
-                          name={LAprojects.name}
-                          position={LAprojects.position}
-                          description={LAprojects.description}
-                          tags={LAprojects.tags}
-                          image={LAprojects.image}
-                          source_code_link={LAprojects.source_code_link}
-                        />
-                      </div>
+                      Applicant name:  {ProjectCard.name}
+                      <p>test</p>
+                      <ProjectCard index={index} {...LAprojects} />
 
 
-                    {/* <ProjectCard key={`LAprojects-${index}`} index={index} {...LAprojects} /> */}
-                    <p>test</p>
-                  </>
+                    </div>
+
                   ))}
-                {/* {filteredProjects.map(function(LAprojects, index) {
-                      return (
-                        <div key={`project-${index}`}>
-                          Applicant name:  {ProjectCard.name}
-
-                          <ProjectCard index={index} {...LAprojects} />
-
-
-                        </div>
-                      )
-                })} */}
 
               </div>
             ) : (
