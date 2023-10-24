@@ -20,12 +20,10 @@ import { github } from '../assets';
 
 const ProjectCard = ({ index, name, position, description,
   tags, image, source_code_link}) => {
-    // check if there is anything worng on the project card
-    console.log("ProjectCard Props:", { index, name, position, description, tags, image, source_code_link });
-    console.log("tetste et");
     return(
-     <motion.div 
-       variants={fadeIn("up", "spring", index * 0.5, 0.75)}> 
+      <motion.div 
+      //  variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      > 
      <Tilt 
      options={{
        max: 45,
