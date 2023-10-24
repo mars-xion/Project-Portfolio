@@ -20,7 +20,10 @@ import { github } from '../assets';
 
 const ProjectCard = ({ index, name, position, description,
   tags, image, source_code_link}) => {
-   return(
+    // check if there is anything worng on the project card
+    console.log("ProjectCard Props:", { index, name, position, description, tags, image, source_code_link });
+    console.log("tetste et");
+    return(
      <motion.div 
        variants={fadeIn("up", "spring", index * 0.5, 0.75)}> 
      <Tilt 
@@ -64,7 +67,7 @@ const ProjectCard = ({ index, name, position, description,
 }
 
 
-const LAe = (props) => {
+const LAe = () => {
     const data = LAData.jobs ;
     // Set initial selected tab
     const [selectedTab, setSelectedTab] = useState(data[0].expData.position); 
@@ -74,16 +77,19 @@ const LAe = (props) => {
       (LAprojects) => LAprojects.position === selectedTab
     );
 
+    // Log the selected tab and filtered projects whenever the component renders
+    console.log("Selected Tab:", selectedTab);
+    console.log("Filtered Projects:", filteredProjects);
+
     // Log state changes when the component mounts and whenever selectedTab changes
     useEffect(() => {
       console.log("Selected Tab:", selectedTab);
     }, [selectedTab]); // useEffect will run whenever selectedTab change
-    
 
     const handleTabChange = (value) => {
-      console.log("Selected Tab:", value); // Log the selected tab value
+      console.log("Selected Tab (change):", value); // Log the selected tab value
       filteredProjects = LAprojects.filter((LAproject) => LAproject.position === value);
-      console.log("Filtered Projects:", filteredProjects); // Log the filtered projects
+      console.log("Filtered Projects (change):", filteredProjects); // Log the filtered projects
       setSelectedTab(value);
     };
 
@@ -133,20 +139,13 @@ const LAe = (props) => {
 
             {filteredProjects.length > 0 ? (
               <div className="mt-20 flex flex-wrap gap-7">
-
                 {filteredProjects.map((LAprojects, index) => (
-                 
-
-                    <div key={`project-${index}`}>
-                      Applicant name:  {ProjectCard.name}
-                      <p>test</p>
-                      <ProjectCard index={index} {...LAprojects} />
-
-
-                    </div>
-
-                  ))}
-
+                  <div key={`project-${index}`}>
+                    Applicant name:  {ProjectCard.name}
+                    <p>test</p>
+                    <ProjectCard index={index} {...LAprojects} />
+                  </div>
+                ))}
               </div>
             ) : (
               <><br/><br/>
