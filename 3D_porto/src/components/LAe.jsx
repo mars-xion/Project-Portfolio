@@ -145,10 +145,14 @@ const LAe = () => {
                   </>
                 ))} */} 
 
-                {filteredProjects.map(function(data) {
+                {filteredProjects.map(function(LAprojects, index) {
                       return (
-                        <div>
-                          Applicant name:  {data.name}
+                        <div key={`project-${index}`}>
+                          {/* Applicant name:  {ProjectCard.name} */}
+
+                          <ProjectCard index={index} {...LAprojects} />
+
+
                         </div>
                       )
                 })}
