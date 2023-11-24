@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/background.css";
-import video from "../assets/bg-universe.mp4";
+import video from "../assets/Fire Video Background Loop, Fire Motion Background, Red Background Animation _ Free Stock Footage.mp4";
 import fallbackImage from "../assets/fallback-image.png";
 
 const Background = () => {
