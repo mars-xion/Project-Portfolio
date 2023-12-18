@@ -1,13 +1,13 @@
 const subheadingsData = {
-  // Personal
+  // personal
   1: [
     {
       title: "About Me",
       content: (
         <>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorema lkfkjsldajf sjfasjdf dsfjsdlfjsd flsjdf sdfljflkdjdflj
+            dalskfjdsjf lsjdfdlkasfd .
           </p>
         </>
       ),
@@ -21,17 +21,14 @@ const subheadingsData = {
       content: (
         <>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorema lkfkjsldajf sjfasjdf dsfjsdlfjsd flsjdf sdfljflkdjdflj
+            dalskfjdsjf lsjdfdlkasfd .
           </p>
         </>
       ),
     },
-  ],
-
-  3: [
     {
-      title: "2024 uni degree",
+      title: "uni degree",
       content: (
         <>
           <p>
@@ -41,11 +38,8 @@ const subheadingsData = {
         </>
       ),
     },
-  ],
-
-  4: [
     {
-      title: "2023 Minor in Turkey",
+      title: "Minor in Turkey",
       content: (
         <>
           <p>
@@ -58,9 +52,9 @@ const subheadingsData = {
   ],
 
   //career
-  5: [
+  3: [
     {
-      title: "2022 Interinship in MOH, Oman",
+      title: "Interinship in MOH, Oman",
       content: (
         <>
           <p>
