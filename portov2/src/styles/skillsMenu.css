@@ -67,7 +67,7 @@
 .skill-sub-container-2 {
   display: flex;
   justify-content: right;
-  gap: 2rem;
+  gap: 20rem;
 }
 
 .level-container {
@@ -89,7 +89,7 @@
 }
 
 .skill-sub-container {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;

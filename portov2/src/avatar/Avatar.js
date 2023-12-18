@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import avatarImage from "../assets/realistic_girl__alien.png";
+import avatarImage from "../assets//realistic_girl__alien.png";
 import "../styles/avatar.css";
-import { propTypes } from "react-bootstrap/esm/Image";
 
 const Avatar = ({ page }) => {
   const avatarClass = `avatar ${page}`;
