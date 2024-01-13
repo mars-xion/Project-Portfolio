@@ -7,10 +7,11 @@ Name | ID
 -----|---- 
 AL Habsi,Mazoun | 3922308
 
-## Footnotes
+
+##### Prototype
 Figma sketch: https://www.figma.com/file/L98G03zTIbofzjoYiNxnOD/Untitled?type=whiteboard&t=1A91z80DebdUdW1i-0 <br />
 
 
-##### Prototype
+## Footnotes
 
 Repository created by [AL Habsi,Mazoun](https://github.com/testmars23),  [AL Habsi,Mazoun](https://git.fhict.nl/I437904) on 2023-09-29.
