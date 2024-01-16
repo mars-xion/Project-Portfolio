@@ -2,18 +2,18 @@ import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
-import { styles } from "../styles";
 import { divisions } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn } from "../utils/motion";
 
 import { SectionWrapper } from "../hoc";
 
-const DivisionsCard = ({ index, title, icon }) => {
+const DivisionsCard = ({ index, title, icon, id }) => {
   return (
-    <Tilt className="xs:w-[250px] ww-full">
+    <Tilt className="xs:w-[220px] ww-full relative">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        className="w-full p-[1px] rounded-[20px] shadow-card"
+        onClick={() => (window.location.href = `${id}`)}
       >
         <div
           options={{
@@ -21,18 +21,23 @@ const DivisionsCard = ({ index, title, icon }) => {
             scale: 1,
             speed: 450,
           }}
-          className="bg-tertiary rounded-[20px] py-5 
-           px-12 min-h-[20px] flex justify-evenly 
-           items-center flex-col"
+          className="bg-tertiary rounded-[20px] pt-3 pb-2 
+           px-6 min-h-[20px] flex justify-evenly 
+           items-center flex-col relative"
         >
-          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
           <h3
-            className="text-white text-[20px] font-bold
-          text-center"
+            className="text-white text-[16px] font-bold
+          text-center pb-2"
           >
             {title}
           </h3>
+          <img
+            src={icon}
+            alt={title}
+            className="w-full h-full object-contain"
+          />
         </div>
+        <div className="absolute top-0 left-0 w-full h-full rounded-[20px] bg-white bg-opacity-5 blur-md"></div>{" "}
       </motion.div>
     </Tilt>
   );
@@ -41,11 +46,14 @@ const DivisionsCard = ({ index, title, icon }) => {
 const ProjectOverview = () => {
   return (
     <>
-      <motion className="div" variants={textVariant()}>
+      {/* <motion className="div" variants={textVariant()}>
         <h2 className={styles.sectionHeadText}>Divisions</h2>
-      </motion>
+      </motion> */}
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div
+        className="mt-64 pb-32 flex flex-wrap  justify-evenly 
+           items-center"
+      >
         {divisions.map((division, index) => (
           <DivisionsCard key={division.title} index={index} {...division} />
         ))}

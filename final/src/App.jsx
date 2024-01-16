@@ -2,10 +2,12 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
-import About from "./sections/AboutSection";
 import Projects from "./pages/Projects";
-import ProjectDetail from "./pages/ProjectDetail";
 import LearningOutcomeDetail from "./pages/LearningOutcomeDetail";
+
+//divisions
+import Portfolio from "./pages/Portfolio";
+import OutOfSpace from "./pages/OutOfSpace";
 
 // import { LAData } from "./constants";
 
@@ -17,9 +19,9 @@ const App = () => {
           <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/About" element={<About />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/project-detail" element={<ProjectDetail />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/outofspace" element={<OutOfSpace />} />
             <Route
               path="/learning-outcome-detail"
               element={<LearningOutcomeDetail />}

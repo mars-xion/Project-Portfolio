@@ -50,7 +50,7 @@ const HeroSection = () => {
       <HeroCanvas isMobile={isMobile} />
       <div className="absolute bottom-[25%] left-[32%]">
         <a
-          href="../pages/ProjectDetail.jsx"
+          href="/ProjectDetail"
           className="text-secondary text-2xl hover:font-bold font-medium"
         >
           View the Reading guide
@@ -58,7 +58,7 @@ const HeroSection = () => {
       </div>
       <div className="absolute bottom-[25%] right-[35.5%]">
         <a
-          href="../pages/Projects.jsx"
+          href="/projects"
           className="text-secondary text-2xl hover:font-bold font-medium"
         >
           View the Projects

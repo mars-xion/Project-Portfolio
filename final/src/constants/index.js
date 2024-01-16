@@ -15,6 +15,15 @@ import {
   jobit,
   tripguide,
   threejs,
+  portfolio,
+  bndestem,
+  outofspace,
+  ddwimage,
+  weyweywebimage,
+  webcode,
+  joystick,
+  react,
+  camera,
 } from "../assets";
 
 export const navLinks = [
@@ -48,42 +57,19 @@ export const navLinks = [
 const services = [
   {
     title: "Web Developer",
-    icon: web,
+    icon: webcode,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "React Developer",
+    icon: joystick,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "Shutterbug",
+    icon: react,
   },
   {
-    title: "Content Creator",
-    icon: creator,
-  },
-];
-
-const divisions = [
-  {
-    title: "Portfolio",
-    icon: web,
-  },
-  {
-    title: "Group Project",
-    icon: mobile,
-  },
-  {
-    title: "Out of Space",
-    icon: backend,
-  },
-  {
-    title: "DDW",
-    icon: creator,
-  },
-  {
-    title: "Malaga",
-    icon: creator,
+    title: "Gamer",
+    icon: camera,
   },
 ];
 
@@ -153,9 +139,129 @@ const testimonials = [
   },
 ];
 
-const projects = [
+//page two: projects divisions, projects.jsx
+
+const divisions = [
+  {
+    title: "Portfolio",
+    icon: portfolio,
+    id: "Portfolio",
+  },
+  {
+    title: "Group Project",
+    icon: bndestem,
+    id: "groupProject",
+  },
+  {
+    title: "Out of Space",
+    icon: outofspace,
+    id: "outofSpace",
+  },
+  {
+    title: "DDW",
+    icon: ddwimage,
+    id: "ddw",
+  },
+  {
+    title: "Malaga",
+    icon: weyweywebimage,
+    id: "malaga",
+  },
+];
+
+const LAData = {
+  jobs: [
+    {
+      expData: {
+        title: "All",
+        position: "All Projects",
+        period: "Oct 2018 - present",
+        details: [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim fringilla dui ac mattis.",
+          "Donec in sodales eros. Nulla fermentum, ante in venenatis pellentesque, justo odio viverra lorem, varius posuere erat tortor et magna.",
+        ],
+      },
+    },
+    {
+      expData: {
+        title: "LA1",
+        position: "User interaction @analysis @advice",
+        period: "Oct 2016 - May 2018",
+        details: [
+          "Analyse the user, the interaction, and the user experience, also taking state of the art interactive technologies into account. ",
+          "Select a suitable design process to be able to advise on UX interventions based on a validated UX design.",
+        ],
+      },
+    },
+    {
+      expData: {
+        title: "LA2",
+        position: "User interaction @execution @validation)",
+        period: "Oct 2018 - present",
+        details: [
+          "Execute and evaluate the user experience of an interactive product.",
+          "Document the development process for the stakeholders.",
+        ],
+      },
+    },
+    {
+      expData: {
+        title: "LA3",
+        position: "Software design and realisation",
+        period: "Mar 2016 - Oct 2016",
+        details: [
+          "Create & design software with existing components or libraries using predetermined quality criteria and version control. ",
+        ],
+      },
+    },
+    {
+      expData: {
+        title: "LA4",
+        position: "Future-oriented organisation",
+        period: "Mar 2016 - Oct 2016",
+        details: [
+          "Carry out a problem analysis and on that basis, determine the definitive problem and elaborate on this in a project plan.",
+        ],
+      },
+    },
+    {
+      expData: {
+        title: "LA5",
+        position: "Investigative problem solving",
+        period: "Mar 2016 - Oct 2016",
+        details: [
+          "formulate sub-questions pertaining to the primary question and answer these using relevant research methods. ",
+          "Use the conclusions of the sub-questions to justify (design) choices.",
+        ],
+      },
+    },
+    {
+      expData: {
+        title: "LA6",
+        position: "Personal leadership",
+        period: "Mar 2016 - Oct 2016",
+        details: [
+          "Methodically reflect on my professional identity and personal development.  ",
+        ],
+      },
+    },
+    {
+      expData: {
+        title: "LA7",
+        position: "Goal-oriented interaction",
+        period: "Mar 2016 - Oct 2016",
+        details: [
+          "communicate with different stakeholders and team members about the ICT assignment",
+        ],
+      },
+    },
+  ],
+};
+
+const LAprojects = [
   {
     name: "Car Rent",
+    position: "Goal-oriented interaction",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -177,6 +283,7 @@ const projects = [
   },
   {
     name: "Job IT",
+    position: "Investigative problem solving",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
@@ -198,6 +305,7 @@ const projects = [
   },
   {
     name: "Trip Guide",
+    position: "User interaction @execution @validation)",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
@@ -219,4 +327,4 @@ const projects = [
   },
 ];
 
-export { services, divisions, technologies, testimonials, projects };
+export { services, technologies, testimonials, divisions, LAData, LAprojects };

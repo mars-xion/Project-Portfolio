@@ -2,7 +2,7 @@ import React from "react";
 import { useGLTF } from "@react-three/drei";
 
 const ReadingGadget = ({ isMobile }) => {
-  const gadget = useGLTF("public/full-screen/scene.gltf");
+  const gadget = useGLTF("public/full-screen/scene.gltf"); //cgadget //full-screen
 
   return (
     <mesh scale={isMobile ? 0.3 : 0.45}>
@@ -14,7 +14,7 @@ const ReadingGadget = ({ isMobile }) => {
         scale={isMobile ? 0.5 : 1.6} // is it mobile page? then make size to 0.3. is it not mobile? then make the size tp 0.65
         position={isMobile ? [0, -3, 0] : [-200, -28.25, -150]}
         rotation={[0.1, 20, -0.1]}
-        onClick={() => (window.location.href = "../pages/ProjectDetail.jsx")}
+        onClick={() => (window.location.href = "/ProjectDetail")}
       />
     </mesh>
   );

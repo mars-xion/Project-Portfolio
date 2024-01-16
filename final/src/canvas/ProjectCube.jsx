@@ -24,7 +24,7 @@ const ProjectCube = ({ isMobile }) => {
         scale={isMobile ? 0.15 : 0.3} // is it mobile page? then make size to 0.3. is it not mobile? then make the size tp 0.65
         position={isMobile ? [0, -3, 0] : [-350, -90.25, -500]}
         rotation={[-0.01, 74.5, -0.1]}
-        onClick={() => (window.location.href = "../pages/Projects.jsx")}
+        onClick={() => (window.location.href = "/projects")}
       />
     </mesh>
   );

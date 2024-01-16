@@ -21,6 +21,17 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import portfolio from "./projects/port/port.png";
+import bndestem from "./projects/group/bndestem.png";
+import outofspace from "./projects/out of space/space.png";
+import ddwimage from "./projects/ddw/ddw.png";
+import weyweywebimage from "./projects/malaga/weyweb.png";
+
+import webcode from "./ioncs/code.png";
+import joystick from "./ioncs/joystick.png";
+import react from "./ioncs/physics.png";
+import camera from "./ioncs/photo-camera.png";
+
 export {
   logo,
   backend,
@@ -42,4 +53,13 @@ export {
   carrent,
   jobit,
   tripguide,
+  portfolio,
+  bndestem,
+  outofspace,
+  ddwimage,
+  weyweywebimage,
+  webcode,
+  joystick,
+  react,
+  camera,
 };
