@@ -5,7 +5,7 @@ import { portfolioData } from "../constants/projects"; // Import the data from d
 const Portfolio = () => {
   // State to track the currently selected section
   const [selectedSection, setSelectedSection] = useState(
-    "Design Specification"
+    "Main Research Question"
   );
 
   // Ref to store references to section elements
@@ -31,7 +31,7 @@ const Portfolio = () => {
       {/* Fixed navigation bar on the left */}
       <div className="fixed left-20 p-4 h-screen bg-transparent">
         <nav>
-          <ul className="list-none pl-0">
+          <ul className="list-none pl-0 pt-44">
             {/* Render the section titles as buttons in the navigation */}
             {portfolioData.sections.map((section) => (
               <li className="mb-2" key={section.title}>
@@ -50,7 +50,7 @@ const Portfolio = () => {
         </nav>
       </div>
       {/* Main content area with section details */}
-      <div className="w-3/4 p-4" style={{ marginLeft: "25%" }}>
+      <div className="pt-32">
         {/* Iterate through sections and render their contents */}
         {portfolioData.sections.map((section, index) => (
           <div
@@ -62,8 +62,31 @@ const Portfolio = () => {
             {/* Iterate through content in each section */}
             {section.contents.map((content, contentIndex) => (
               <div className="mb-4" key={contentIndex}>
+                {" "}
+                {/* Add mb-4 here */}
                 <h4 className="font-semibold">{content.subtitle}</h4>
-                <p>{content.description}</p>
+                <p className="mb-2">{content.description}</p>
+                {/* Display 'Why?' section if available */}
+                {content.why && (
+                  <div className="mb-2">
+                    <h5 className="font-semibold">Why?</h5>
+                    <p>{content.why}</p>
+                  </div>
+                )}
+                {/* Display 'How?' section if available */}
+                {content.how && (
+                  <div className="mb-2">
+                    <h5 className="font-semibold">How?</h5>
+                    <p>{content.how}</p>
+                  </div>
+                )}
+                {/* Display 'Conclusion' section if available */}
+                {content.conclusion && (
+                  <div className="mb-2">
+                    <h5 className="font-semibold">Conclusion</h5>
+                    <p>{content.conclusion}</p>
+                  </div>
+                )}
                 {/* Render images and links if available */}
                 {content.image && (
                   <img
@@ -79,6 +102,10 @@ const Portfolio = () => {
                     </a>
                   </p>
                 ))}
+                {/* Add a horizontal line to separate questions */}
+                {contentIndex < section.contents.length - 1 && (
+                  <hr className="my-4 border-t border-gray-300" />
+                )}
               </div>
             ))}
           </div>

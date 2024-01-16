@@ -21,11 +21,11 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
-import portfolio from "./projects/port/port.png";
-import bndestem from "./projects/group/bndestem.png";
-import outofspace from "./projects/out of space/space.png";
-import ddwimage from "./projects/ddw/ddw.png";
-import weyweywebimage from "./projects/malaga/weyweb.png";
+import portfolio from "../../public/projects/port/port.png";
+import bndestem from "../../public/projects/group/bndestem.png";
+import outofspace from "../../public/projects/outofspace/space.png";
+import ddwimage from "../../public/projects/ddw/ddw.png";
+import weyweywebimage from "../../public/projects/malaga/weyweb.png";
 
 import webcode from "./ioncs/code.png";
 import joystick from "./ioncs/joystick.png";
