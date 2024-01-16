@@ -338,3 +338,47 @@ export const kelt9bData = {
   fullDocumentLink: "../../public/projects/outofspace/Kelt 9B.pdf",
   storyDocument: "../../public/projects/outofspace/Kelt 9B.docx",
 };
+
+export const dutchDesignWeekData = {
+  title: "Dutch Design Week Experience",
+  sections: [
+    {
+      title: "Overview",
+      description:
+        "The Dutch Design Week, held from October 21 to 29, 2023, involved working with guests from Toronto and included various tasks and a video presentation of the week's events.",
+      image: "",
+    },
+    {
+      title: "Narrative of the Week",
+      description:
+        "The week began with meeting the students and receiving wristbands for access to all exhibitions and shows. The theme focused on 'Product and Craft Design', exploring the city and the DDW.",
+      image: "/public/projects/ddw/WhatsApp Image 2024-01-07 at 19.33.46.jpeg",
+    },
+    {
+      title: "The Assignment",
+      description:
+        "Participants were tasked with exploring the DDW, capturing their findings through photos, videos, or drawings, and creating a story to be presented on the final day.",
+      image: "",
+    },
+    {
+      title: "Summary of Day 1 and Day 2",
+      description:
+        "Day 1 involved exploring various exhibits and engaging with art and technology, while Day 2 focused on centralized exhibits in Eindhoven, including interactive displays using VR and AI.",
+      image:
+        "/public/projects/ddw/WhatsApp Image 2024-01-07 at 19.33.46 (3).jpeg",
+    },
+    {
+      title: "Video Making",
+      description:
+        "The video project encapsulated the week's experiences but faced challenges due to time constraints and unclear objectives, leading to a video that lacked some intended content.",
+      video: "",
+    },
+    {
+      title: "Reflection",
+      description:
+        "The event was a fun and enlightening experience, offering insights into different innovations and the chance to collaborate with international peers.",
+      image: "",
+    },
+  ],
+  fullDocumentLink: "../../public/projects/ddw/Dutch Design Week.pdf",
+};

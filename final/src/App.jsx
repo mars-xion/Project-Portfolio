@@ -8,6 +8,8 @@ import LearningOutcomeDetail from "./pages/LearningOutcomeDetail";
 //divisions
 import Portfolio from "./pages/Portfolio";
 import OutOfSpace from "./pages/OutOfSpace";
+import DutchDesignWeek from "./pages/DutchDesignWeek";
+import Weyweyweb from "./pages/Weyweyweb";
 
 // import { LAData } from "./constants";
 
@@ -22,6 +24,8 @@ const App = () => {
             <Route path="/projects" element={<Projects />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/outofspace" element={<OutOfSpace />} />
+            <Route path="/dutchdesignWeek" element={<DutchDesignWeek />} />
+            <Route path="/weyweyweb" element={<Weyweyweb />} />
             <Route
               path="/learning-outcome-detail"
               element={<LearningOutcomeDetail />}

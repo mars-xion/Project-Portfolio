@@ -6,9 +6,9 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const OutOfSpace = () => {
   return (
-    <div className="container mx-auto p-4 bg-black-100 text-white-100">
+    <div className="container mx-auto p-4 bg-black-100 text-white-100 pt-32">
       <motion.div className="text-center" variants={textVariant()}>
-        <h1 className="text-4xl md:text-5xl font-bold mb-10 text-white-100">
+        <h1 className="text-4xl md:text-5xl font-bold mb-10 text-secondary">
           Exploring KELT 9B
         </h1>
       </motion.div>

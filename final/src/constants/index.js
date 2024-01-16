@@ -158,14 +158,14 @@ const divisions = [
     id: "outofSpace",
   },
   {
-    title: "DDW",
+    title: "Dutch Design Week",
     icon: ddwimage,
-    id: "ddw",
+    id: "dutchdesignWeek",
   },
   {
     title: "Malaga",
     icon: weyweywebimage,
-    id: "malaga",
+    id: "Weyweyweb",
   },
 ];
 
