@@ -52,6 +52,11 @@ export const navLinks = [
     title: "Contact",
     path: ".#contact",
   },
+  {
+    id: "LO",
+    title: "LO",
+    path: "./lOAll",
+  },
 ];
 
 const services = [
@@ -140,7 +145,6 @@ const testimonials = [
 ];
 
 //page two: projects divisions, projects.jsx
-
 const divisions = [
   {
     title: "Portfolio",
@@ -165,7 +169,7 @@ const divisions = [
   {
     title: "Malaga",
     icon: weyweywebimage,
-    id: "Weyweyweb",
+    id: "weyweyweb",
   },
 ];
 

@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { dutchDesignWeekData } from "../constants/projects";
+import SectionWrapper from "../hoc/SectionWrapper";
 
 const DutchDesignWeek = () => {
   const { title, eventDetails, sections, videoLinks } = dutchDesignWeekData;
@@ -116,4 +117,4 @@ const DutchDesignWeek = () => {
   );
 };
 
-export default DutchDesignWeek;
+export default SectionWrapper(DutchDesignWeek, "");

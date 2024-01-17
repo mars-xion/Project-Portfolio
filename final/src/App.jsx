@@ -11,6 +11,9 @@ import OutOfSpace from "./pages/OutOfSpace";
 import DutchDesignWeek from "./pages/DutchDesignWeek";
 import Weyweyweb from "./pages/Weyweyweb";
 
+//other
+import LOAll from "./pages/LOAll";
+
 // import { LAData } from "./constants";
 
 const App = () => {
@@ -30,6 +33,7 @@ const App = () => {
               path="/learning-outcome-detail"
               element={<LearningOutcomeDetail />}
             />
+            <Route path="/lOAll" element={<LOAll />} />
           </Routes>
         </div>
       </div>

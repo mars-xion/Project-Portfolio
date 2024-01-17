@@ -1,254 +1,10 @@
-export const portfolioData = {
-  sections: [
-    {
-      title: "Main Research Question",
-      contents: [
-        {
-          subtitle:
-            "How can I as a programmer design a modern and user-friendly portfolio website that effectively incorporates the latest web design trends of 2023 while ensuring a smooth user experience and achieving the desired website goals?",
-          description:
-            "This section focuses on the main research question, which is to design a modern and user-friendly portfolio website that incorporates the latest web design trends of 2023 while ensuring a smooth user experience and achieving specific website goals.",
-          image: "", // Placeholder for main question image
-          links: [], // Placeholder for main question links
-          why: "",
-          how: "",
-          conclusion: "",
-        },
-      ],
-    },
-    {
-      title: "Sub Questions One",
-      contents: [
-        {
-          subtitle: "1. What are the latest web design trends of 2023?",
-          description: "",
-          image: "", // Placeholder for sub-question image
-          links: [
-            {
-              url: "https://example.com/trend-article",
-              text: "Read More on Web Design Trends",
-            },
-          ],
-          why: "",
-          how: "",
-          conclusion: "",
-        },
-        {
-          subtitle: "1.1 From the Literature Study",
-          description: "",
-          image: "", // Placeholder for sub-question image
-          links: [],
-          why: "The 'Why?' section explains the motivation behind this research.",
-          how: "The 'How?' section outlines the methodology and approach used.",
-          conclusion:
-            "The 'Conclusion' summarizes the main findings and outcomes.",
-        },
-        {
-          subtitle: "1.2 From the Trend Analysis",
-          description: "",
-          image: "", // Placeholder for sub-question image
-          links: [],
-          why: "The 'Why?' section explains the motivation behind this research.",
-          how: "The 'How?' section outlines the methodology and approach used.",
-          conclusion:
-            "The 'Conclusion' summarizes the main findings and outcomes.",
-        },
-        {
-          subtitle: "1.3 From the Design Pattern Search",
-          description: "",
-          image: "", // Placeholder for sub-question image
-          links: [],
-          why: "The 'Why?' section explains the motivation behind this research.",
-          how: "The 'How?' section outlines the methodology and approach used.",
-          conclusion:
-            "The 'Conclusion' summarizes the main findings and outcomes.",
-        },
-        {
-          subtitle: "Conclusion for sub question 1",
-          description: "",
-          image: "", // Placeholder for sub-question image
-          links: [],
-          why: "",
-          how: "",
-          conclusion: "",
-        },
-      ],
-    },
-    {
-      title: "Sub Questions Two",
-      contents: [
-        {
-          subtitle: "2. How to ensure that the website is user-friendly?",
-          description: "",
-          image: "", // Placeholder for sub-question image
-          links: [
-            {
-              url: "https://example.com/user-friendly-article",
-              text: "Discover More on User-Friendly Websites",
-            },
-          ],
-          why: "",
-          how: "",
-          conclusion: "",
-        },
-        {
-          subtitle:
-            "2.1 What insights can be drawn from feedback collected and analyzed from three selected websites that have different navigation structure?",
-          description: "",
-          image: "", // Placeholder for sub-question image
-          links: [],
-          why: "The 'Why?' section explains the motivation behind this research.",
-          how: "The 'How?' section outlines the methodology and approach used.",
-          conclusion:
-            "The 'Conclusion' summarizes the main findings and outcomes.",
-        },
-        {
-          subtitle:
-            "2.2 How can the website be tested in which, what is the best testing method?",
-          description: "",
-          image: "", // Placeholder for sub-question image
-          links: [],
-          why: "The 'Why?' section explains the motivation behind this research.",
-          how: "The 'How?' section outlines the methodology and approach used.",
-          conclusion:
-            "The 'Conclusion' summarizes the main findings and outcomes.",
-        },
-        {
-          subtitle: "Conclusion for sub question 2",
-          description: "",
-          image: "", // Placeholder for sub-question image
-          links: [],
-          why: "",
-          how: "",
-          conclusion: "",
-        },
-      ],
-    },
-    {
-      title: "Sub Questions Three",
-      contents: [
-        {
-          subtitle:
-            "3. What should be the layout and structure of the website? How can information be organized for easy navigation?",
-          description: "",
-          image: "", // Placeholder for sub-question image
-          links: [],
-          why: "",
-          how: "",
-          conclusion: "",
-        },
-        {
-          subtitle: "3.1 What should be the design of the website?",
-          description: "",
-          image: "", // Placeholder for sub-question image
-          links: [],
-          why: "The 'Why?' section explains the motivation behind this research.",
-          how: "The 'How?' section outlines the methodology and approach used.",
-          conclusion:
-            "The 'Conclusion' summarizes the main findings and outcomes.",
-        },
-        {
-          subtitle: "3.1.1 From the Sketching",
-          description: "",
-          image: "", // Placeholder for sub-question image
-          links: [],
-          why: "The 'Why?' section explains the motivation behind this research.",
-          how: "The 'How?' section outlines the methodology and approach used.",
-          conclusion:
-            "The 'Conclusion' summarizes the main findings and outcomes.",
-        },
-        {
-          subtitle: "3.1.2 From the Prototype",
-          description: "",
-          image: "", // Placeholder for sub-question image
-          links: [],
-          why: "The 'Why?' section explains the motivation behind this research.",
-          how: "The 'How?' section outlines the methodology and approach used.",
-          conclusion:
-            "The 'Conclusion' summarizes the main findings and outcomes.",
-        },
-        {
-          subtitle: "Conclusion for sub question 3.1",
-          description: "",
-          image: "", // Placeholder for sub-question image
-          links: [],
-          why: "",
-          how: "",
-          conclusion: "",
-        },
-        {
-          subtitle:
-            "3.2 How can I further improve how I visualize the structure of the portfolio?",
-          description: "",
-          image: "", // Placeholder for sub-question image
-          links: [],
-          why: "The 'Why?' section explains the motivation behind this research.",
-          how: "The 'How?' section outlines the methodology and approach used.",
-          conclusion:
-            "The 'Conclusion' summarizes the main findings and outcomes.",
-        },
-        {
-          subtitle: "3.2.1 From the C4 Model",
-          description: "",
-          image: "", // Placeholder for sub-question image
-          links: [],
-          why: "The 'Why?' section explains the motivation behind this research.",
-          how: "The 'How?' section outlines the methodology and approach used.",
-          conclusion:
-            "The 'Conclusion' summarizes the main findings and outcomes.",
-        },
-        {
-          subtitle: "3.2.2 From the Sketching and the Prototype",
-          description: "",
-          image: "", // Placeholder for sub-question image
-          links: [],
-          why: "The 'Why?' section explains the motivation behind this research.",
-          how: "The 'How?' section outlines the methodology and approach used.",
-          conclusion:
-            "The 'Conclusion' summarizes the main findings and outcomes.",
-        },
-        {
-          subtitle: "Conclusion for sub question 3.2",
-          description: "",
-          image: "", // Placeholder for sub-question image
-          links: [],
-          why: "",
-          how: "",
-          conclusion: "",
-        },
-        {
-          subtitle: "Conclusion for sub question 3",
-          description: "",
-          image: "", // Placeholder for sub-question image
-          links: [],
-          why: "",
-          how: "",
-          conclusion: "",
-        },
-      ],
-    },
-    {
-      title: "Conclusion",
-      contents: [
-        {
-          subtitle: "Conclusion for the main question",
-          description: "",
-          image: "", // Placeholder for sub-question image
-          links: [],
-          why: "",
-          how: "",
-          conclusion: "",
-        },
-      ],
-    },
-  ],
-};
+// This page only have the divisions of malaga, ddw, and out of space
 
 export const kelt9bData = {
   title: "Exploring KELT 9B",
   event: "Out of Space",
   date: "4-8 September 2023",
-  location: "Eindhoven,Netherlands",
+  location: "Eindhoven, Netherlands",
   university: "Fontys University of Applied Science",
   theme: "Product and Craft Design",
   overview:
@@ -331,4 +87,144 @@ export const dutchDesignWeekData = {
     "/public/projects/ddw/WhatsApp Video 2024-01-07 at 19.35.15 (2).mp4",
     "/public/projects/ddw/WhatsApp Video 2024-01-07 at 19.35.15.mp4",
   ],
+};
+
+export const weyweywebData = {
+  overview: {
+    title: "Weyweyweb",
+    event: "A Yay-Yay conf for UI lovers",
+    date: "23-24 November 2023",
+    location: "Málaga, Spain",
+    authority: "Yay-Yay events with the support of Yes We Tech",
+    topics: [
+      "Web programming",
+      "JS frameworks",
+      "Web design",
+      "Product design",
+      "Mobile development",
+      "Software architectures",
+      "Best practices",
+      "Web accessibility",
+    ],
+  },
+  firstDay: {
+    schedule: [
+      "Auditing Design Systems for Accessibility by Anna E. Cook",
+      "Adaptive Designs, Beyond Pixel Perfection by Stephanie Walter",
+      "Sharing is caring: what to know before you build a Research Repository by Ju Iglesias",
+      "Unlocking collaboration: A framework for developers and designers by Alicia Calderón",
+      "3 reasons to switch to OKLCH by Anton Lovchikov",
+      "ChatGPT and AI for web developers by Maximiliano Firtman",
+    ],
+    notableTopics: [
+      "3 reasons to switch to OKLCH",
+      "ChatGPT and AI for web developers",
+    ],
+    oklchInsights:
+      "It is better to use OKLCH for multiple website themes but can be challenging with React and Tailwind CSS.",
+    chatGPTInsights:
+      "Impressed by how ChatGPT can be used for web development with code and symbols.",
+  },
+  secondDay: {
+    attendedTalks: [
+      "3D in the web, how hard can it be? By Sara Vieira",
+      "Unlocking the power of HTML semantics: Crafting a more meaningful web by Beatriz Lavela and Juan Javier Moreno (Workshop)",
+    ],
+    notableTopics: "3D in the web, how hard can it be? By Sara Vieira",
+    insights:
+      "Learned about 3D web content, including importing objects, changing sizing, setting lights, changing object colors, and adding animations. Found it very useful.",
+    workshopInsights:
+      "The HTML semantics workshop surprised with its usefulness, especially in terms of coding efficiency. Learned about semantic HTML and a Google extension called 'headsmap.'",
+  },
+  exerciseLinks: {
+    exercise1: "https://codepen.io/JuanJavier1979/pen/YzBLMyP",
+    exercise2: "https://codepen.io/JuanJavier1979/pen/PoVegqz",
+    exercise3: "https://codepen.io/JuanJavier1979/pen/RwvyORr",
+    exercise4: "https://codepen.io/JuanJavier1979/pen/RwvyOLR",
+    exercise5: "https://codepen.io/JuanJavier1979/pen/oNmdOpX",
+    exercise6: "https://codepen.io/JuanJavier1979/pen/xxMWQoN",
+  },
+  htmlCodeExercises: [
+    {
+      exerciseNumber: 2,
+      code: `
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="eYXvGve" data-user="Mars_Xion" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/Mars_Xion/pen/eYXvGve">
+      Exercise 2 Article Structure with Semantic HTML</a> by Mars (<a href="https://codepen.io/Mars_Xion">@Mars_Xion</a>)
+       on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    `,
+      exerciseDescription:
+        "This exercise teaches how to create an article structure using semantic HTML elements, emphasizing the importance of using appropriate tags for content structuring.",
+      exerciseLink: "https://codepen.io/JuanJavier1979/pen/PoVegqz",
+    },
+    {
+      exerciseNumber: 3,
+      code: `
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="zYbZEoR" data-user="Mars_Xion" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/Mars_Xion/pen/zYbZEoR">
+      Exercise 3 Using semantic tags for Webpage Layout</a> by Mars (<a href="https://codepen.io/Mars_Xion">@Mars_Xion</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    `,
+      exerciseDescription:
+        "Building a navigation bar using the <nav> tag and structuring main content with <main>.",
+      exerciseLink: "https://codepen.io/JuanJavier1979/pen/RwvyORr",
+    },
+    {
+      exerciseNumber: 4,
+      code: `
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="JjzWrRB" data-user="Mars_Xion" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/Mars_Xion/pen/JjzWrRB">
+      Exercise 4 Using &lt;figure&gt; and &lt;figcaption&gt; in HTML</a> by Mars (<a href="https://codepen.io/Mars_Xion">@Mars_Xion</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    `,
+      exerciseDescription:
+        "Enhancing media content using <figure> and <figcaption> tags.",
+      exerciseLink: "https://codepen.io/JuanJavier1979/pen/RwvyOLR",
+    },
+    {
+      exerciseNumber: 5,
+      code: `
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="zYbZEwW" data-user="Mars_Xion" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/Mars_Xion/pen/zYbZEwW">
+      Exercise 5 Distinguishing Between &lt;section&gt; and &lt;div&gt;</a> by Mars (<a href="https://codepen.io/Mars_Xion">@Mars_Xion</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    `,
+      exerciseDescription:
+        "Utilizes semantic HTML in a different webpage scenario.",
+      exerciseLink: "https://codepen.io/JuanJavier1979/pen/oNmdOpX",
+    },
+    {
+      exerciseNumber: 6,
+      code: `
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="jOJBGLy" data-user="Mars_Xion" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/Mars_Xion/pen/jOJBGLy">
+      Flavours Splassh Exercise</a> by Mars (<a href="https://codepen.io/Mars_Xion">@Mars_Xion</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    `,
+      exerciseDescription:
+        "Utilizes semantic HTML in a different webpage scenario.",
+      exerciseLink: "https://codepen.io/JuanJavier1979/pen/xxMWQoN",
+    },
+  ],
+  images: [
+    {
+      src: "/public/projects/malaga/images.png",
+      alt: "Image 1",
+    },
+    {
+      src: "/public/projects/malaga/1.PNG",
+      alt: "Image 2",
+    },
+  ],
+  fullDocumentLink: "../../public/projects/malaga/Weyweyweb.pdf",
 };

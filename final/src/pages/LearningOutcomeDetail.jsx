@@ -1,7 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 
-const LearningOutcomeDetail = () => {
-  return <div>Learning Outcome Detail Page</div>;
-};
-
-export default LearningOutcomeDetail;
+export default class LearningOutcomeDetail extends Component {
+  render() {
+    return <div>LearningOutcomeDetail</div>;
+  }
+}

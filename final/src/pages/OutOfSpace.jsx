@@ -31,9 +31,24 @@ const OutOfSpace = () => {
           </div>
           {/* Sections */}
           <div className="bg-gray-800 bg-opacity-90 rounded-lg p-6 mb-8">
+            <h2 className="text-2xl font-semibold mb-3 text-secondary">
+              Overview
+            </h2>
             <p className="text-md md:text-lg">{kelt9bData.overview}</p>
+          </div>
+
+          <div className="bg-gray-800 bg-opacity-90 rounded-lg p-6 mb-8">
+            <h2 className="text-2xl font-semibold mb-3 text-secondary">
+              The Planet and Its Inhabitants
+            </h2>
             <p className="text-md md:text-lg">{kelt9bData.kelt9bInfo}</p>
             <p className="text-md md:text-lg">{kelt9bData.aliensInfo}</p>
+          </div>
+
+          <div className="bg-gray-800 bg-opacity-90 rounded-lg p-6 mb-8">
+            <h2 className="text-2xl font-semibold mb-3 text-secondary">
+              First Mission
+            </h2>
             <p className="text-md md:text-lg">{kelt9bData.firstMission}</p>
           </div>
 
@@ -43,6 +58,12 @@ const OutOfSpace = () => {
             </h2>
             <p className="mb-3">{kelt9bData.healthAndRecreation.goal}</p>
             <p>{kelt9bData.healthAndRecreation.approach}</p>
+          </div>
+
+          <div className="bg-gray-800 bg-opacity-90 rounded-lg p-6 mb-8">
+            <h2 className="text-2xl font-semibold mb-3 text-secondary">
+              Final Day
+            </h2>
             <p className="mt-6 mb-4">{kelt9bData.finalDay}</p>
             <p className="mb-6">{kelt9bData.reflection}</p>
           </div>
@@ -63,42 +84,47 @@ const OutOfSpace = () => {
         </div>
 
         {/* Videos */}
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8 my-10">
-          <video width="320" height="240" controls className="shadow-md">
-            <source src={kelt9bData.video} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <video
-            width="320"
-            height="240"
-            controls
-            autoPlay
-            muted
-            className="shadow-md"
-          >
-            <source src={kelt9bData.additionalVideo} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+        <div className="bg-gray-800 bg-opacity-90 rounded-lg p-6">
+          <h2 className="text-2xl font-semibold mb-3 text-secondary">
+            Videos and Documents
+          </h2>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-10">
+            <video width="320" height="240" controls className="shadow-md">
+              <source src={kelt9bData.video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video
+              width="320"
+              height="240"
+              controls
+              autoPlay
+              muted
+              className="shadow-md"
+            >
+              <source src={kelt9bData.additionalVideo} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
 
-        {/* Document Links */}
-        <div className="text-center mt-10">
-          <a
-            href={kelt9bData.fullDocumentLink}
-            target="_blank"
-            className="text-secondary underline text-lg"
-            // onClick={window.open(kelt9bData.fullDocumentLink)}
-          >
-            View Full Document
-          </a>
-          <a
-            href={kelt9bData.storyDocument}
-            target="_blank"
-            className="text-secondary underline text-lg block mt-2"
-            autoplay
-          >
-            Read the Story Document
-          </a>
+          {/* Document Links */}
+          <div className="text-center mt-10">
+            <a
+              href={kelt9bData.fullDocumentLink}
+              target="_blank"
+              className="text-secondary underline text-lg"
+              // onClick={window.open(kelt9bData.fullDocumentLink)}
+            >
+              View Full Document
+            </a>
+            <a
+              href={kelt9bData.storyDocument}
+              target="_blank"
+              className="text-secondary underline text-lg block mt-2"
+              autoplay
+            >
+              Read the Story Document
+            </a>
+          </div>
         </div>
       </div>
     </div>
