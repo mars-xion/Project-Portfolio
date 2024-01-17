@@ -2,7 +2,8 @@ import React from "react";
 import { useGLTF } from "@react-three/drei";
 
 const ReadingGadget = ({ isMobile }) => {
-  const gadget = useGLTF("/public/full-screen/scene.gltf"); //cgadget //full-screen
+  const urlforgltf = "/public/full-screen/scene.gltf";
+  const gadget = useGLTF(urlforgltf); //cgadget //full-screen
 
   return (
     <mesh scale={isMobile ? 0.3 : 0.45}>
