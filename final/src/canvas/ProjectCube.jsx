@@ -2,7 +2,7 @@ import React from "react";
 import { useGLTF } from "@react-three/drei";
 
 const ProjectCube = ({ isMobile }) => {
-  const cube = useGLTF("public/sci-fi_crate__ammunition_box_1/scene.gltf");
+  const cube = useGLTF("/public/sci-fi_crate__ammunition_box_1/scene.gltf");
 
   return (
     <mesh scale={isMobile ? 0.00003 : 0.059}>
