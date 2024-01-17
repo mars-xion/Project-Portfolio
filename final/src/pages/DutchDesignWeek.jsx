@@ -1,58 +1,119 @@
 import React from "react";
-import { Tilt } from "react-tilt";
-import { motion } from "framer-motion";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { dutchDesignWeekData } from "../constants/projects";
-import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
 
 const DutchDesignWeek = () => {
-  return (
-    <div className="container mx-auto p-4 bg-black-100 text-white-100 pt-32">
-      <motion.div className="text-center" variants={textVariant()}>
-        <h1 className="text-4xl md:text-5xl font-bold mb-10 text-secondary">
-          {dutchDesignWeekData.title}
-        </h1>
-      </motion.div>
+  const { title, eventDetails, sections, videoLinks } = dutchDesignWeekData;
+  const headerImageUrl = "/public/projects/ddw/123123.jpeg";
 
-      <motion.div variants={fadeIn()}>
-        {dutchDesignWeekData.sections.map((section, index) => (
-          <div key={index} className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3 text-secondary">
+  const videoSliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: "0",
+  };
+
+  return (
+    <div className="pt-32 text-white min-h-screen">
+      <div className="container mx-auto p-4 pt-16">
+        {/* Event Header with Image */}
+        <div className="flex flex-col md:flex-row items-center gap-4 mb-12">
+          <div className="md:w-2/3 flex-grow">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">{title}</h1>
+            <p className="text-md md:text-lg">{eventDetails.theme}</p>
+            <p className="text-md md:text-lg">{eventDetails.date}</p>
+            <p className="text-md md:text-lg">{eventDetails.location}</p>
+            <p className="text-md md:text-lg">{eventDetails.university}</p>
+          </div>
+          <div className="md:w-1/3 flex-shrink-0">
+            <img
+              src={headerImageUrl}
+              alt="Event"
+              className="w-full h-auto rounded-lg shadow-md"
+            />
+          </div>
+        </div>
+        {/* Sections */}
+        {sections.map((section, index) => (
+          <div
+            key={index}
+            className="bg-gray-800 bg-opacity-90 rounded-lg p-6 mb-8"
+          >
+            <h2 className="text-xl md:text-2xl font-semibold mb-2">
               {section.title}
             </h2>
-            <p>{section.description}</p>
-            {section.image && (
-              <div className="w-full my-4" options={{ max: 25, scale: 1.05 }}>
+            <p className="text-sm md:text-base mb-4">{section.description}</p>
+            {/* Check for specific section titles */}
+            {section.title === "Day 1" && (
+              <>
+                {/* Place your images for Day 1 here */}
                 <img
-                  src={section.image}
-                  alt={`Image for ${section.title}`}
-                  className="w-full h-auto rounded-lg shadow-md"
+                  src="image-for-day-1.jpg"
+                  alt="Image for Day 1"
+                  className="inline-block w-1/4 h-auto rounded-lg shadow-md mr-4 mb-4"
                 />
-              </div>
+              </>
             )}
+            {section.title === "Day 2" && (
+              <>
+                {/* Place your images for Day 2 here */}
+                <img
+                  src="image-for-day-2.jpg"
+                  alt="Image for Day 2"
+                  className="inline-block w-1/4 h-auto rounded-lg shadow-md mr-4 mb-4"
+                />
+              </>
+            )}
+            {/* Video */}
             {section.video && (
-              <div className="flex justify-center my-4">
-                <video width="320" height="240" controls className="shadow-md">
-                  <source src={section.video} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
+              <video controls className="w-full rounded-lg shadow-md">
+                <source src={section.video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             )}
           </div>
         ))}
-      </motion.div>
-      {/* Document Link */}
-      <div className="text-center mt-10">
-        <a
-          href={dutchDesignWeekData.fullDocumentLink}
-          target="_blank"
-          className="text-secondary underline text-lg"
-        >
-          View Full Dutch Design Week Document
-        </a>
+
+        {/* Document Link */}
+        <div className="text-center mt-8">
+          <a
+            href={dutchDesignWeekData.fullDocumentLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-400 transition duration-300"
+          >
+            View Full Dutch Design Week Document
+          </a>
+        </div>
+
+        {/* Video Slideshow */}
+        <div className="mt-8">
+          <h2 className="text-2xl font-semibold mb-4">Other videos</h2>
+          <div className="slider-container">
+            <Slider {...videoSliderSettings}>
+              {videoLinks.map((videoLink, index) => (
+                <div key={index}>
+                  <video
+                    controls
+                    key={index}
+                    className="w-full rounded-lg shadow-md h-[48rem]"
+                  >
+                    <source src={videoLink} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
-export default SectionWrapper(DutchDesignWeek, "DutchDesignWeek");
+export default DutchDesignWeek;
