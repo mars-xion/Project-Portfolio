@@ -1,15 +1,15 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload } from "@react-three/drei";
-// import CanvasLoader from "../components/Loader";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import CanvasLoader from "../components/Loader";
+// import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import ReadingGadget from "./ReadingGadget";
 import ProjectCube from "./ProjectCube";
 
 const HeroCanvas = ({ isMobile }) => {
   return (
     <Canvas camera={{ position: [20, 20, 20], fov: 25 }}>
-      <Suspense fallback={<GLTFLoader />}>
+      <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           autoRotate={false}
           enableRotate={false}

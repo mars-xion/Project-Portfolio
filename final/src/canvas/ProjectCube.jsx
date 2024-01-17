@@ -2,7 +2,7 @@ import React from "react";
 import { useGLTF } from "@react-three/drei";
 
 const ProjectCube = ({ isMobile }) => {
-  const urlforgltf = "/public/sci-fi_crate__ammunition_box_1/scene.gltf";
+  const urlforgltf = "../../public/sci-fi_crate__ammunition_box_1/scene.gltf";
   const cube = useGLTF(urlforgltf);
 
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import { useGLTF } from "@react-three/drei";
 
 const ReadingGadget = ({ isMobile }) => {
-  const urlforgltf = "/public/full-screen/scene.gltf";
+  const urlforgltf = "../../public/full-screen/scene.gltf";
   const gadget = useGLTF(urlforgltf); //cgadget //full-screen
 
   return (
