@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <div>
       <ProjectOverview />
-      <LearningOutcomesSection />
+{/*       <LearningOutcomesSection /> */}
     </div>
   );
 };
