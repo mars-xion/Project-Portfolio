@@ -8,7 +8,7 @@ import ContactSection from "../sections/ContactSection";
 const Home = () => {
   return (
     <div>
-      <HeroSection />
+{/*       <HeroSection /> */}
       <AboutSection />
       <ToolsSection />
       <TestimonialsSection />
